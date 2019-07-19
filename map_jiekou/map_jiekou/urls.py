@@ -17,6 +17,6 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^map_api$', include('Map_api.urls')),
+    url(r'^map_api/', include('Map_api.urls')),
 
 ]

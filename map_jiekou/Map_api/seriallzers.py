@@ -1,7 +1,10 @@
+# *_* coding:UTF *_*
+# author :v_zhangjunjie02
+# 开发时间 ：2019-07-19 09:36
 from common.models import Intelligence_result_log
 from rest_framework import routers, serializers, viewsets
 
-
+# Serializers define the API representation.
 class Isl_Serializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Intelligence_result_log
