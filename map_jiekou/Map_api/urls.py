@@ -4,9 +4,11 @@
 
 from django.conf.urls import url,include
 
-from . import seriallzers
+from Map_api.views import Intelligence_result_log,sys_user
+#接口路由
 urlpatterns = [
-    url(r'^a/', include(seriallzers.router.urls)),
-    #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^', include(Intelligence_result_log.router.urls)),
+    url(r'^', include(sys_user.router.urls)),
+
 ]
 
